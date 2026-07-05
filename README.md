@@ -11,8 +11,7 @@ Sistema web de análise comercial do **Grupo Doce Mel**. Substitui o fluxo de pl
 | Frontend | React 18 + TypeScript + Tailwind CSS v3 + Vite 5 |
 | Backend | Python 3.11 + FastAPI + pandas + openpyxl |
 | Banco | Supabase (PostgreSQL) |
-| Deploy Frontend | Vercel |
-| Deploy Backend | Railway |
+| Deploy | Vercel (frontend estático + backend serverless Python) |
 
 ---
 
