@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand: #004400;
+    --accent: #ed5600;
+  }
+
+  .dark {
+    --brand: #ed5600;
+    --accent: #ff7733;
+  }
+
+  * {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100;
+    @apply font-sans text-sm antialiased;
+  }
+
+  /* Scrollbar customizada */
+  ::-webkit-scrollbar {
+    @apply w-1.5 h-1.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gray-300 dark:bg-gray-600;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-gray-500;
+  }
+}
+
+@layer utilities {
+  .text-brand {
+    color: var(--brand);
+  }
+  .bg-brand {
+    background-color: var(--brand);
+  }
+  .border-brand {
+    border-color: var(--brand);
+  }
+  .ring-brand {
+    --tw-ring-color: var(--brand);
+  }
+  .hover\:bg-brand:hover {
+    background-color: var(--brand);
+  }
+
+  /* Tabelas compactas */
+  .table-compact th,
+  .table-compact td {
+    @apply px-2 py-1.5 text-xs;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-md shadow-card;
+  }
+}

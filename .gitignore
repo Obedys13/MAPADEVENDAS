@@ -1,0 +1,45 @@
+# ── Python / Backend ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+*.so
+.mypy_cache/
+.pytest_cache/
+backend/.env
+backend/*.env.*
+!backend/.env.example
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+.vite/
+
+# ── Planilhas e uploads locais (nunca commitar dados reais) ───────────────────
+*.xlsx
+*.xls
+*.csv
+uploads/
+tmp/
+
+# ── Editores / Sistema ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+*.swp
+*.swo
+.idea/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
